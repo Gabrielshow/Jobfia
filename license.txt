@@ -1,0 +1,21 @@
+Jobfia License Agreement
+
+BY INSTALLING THIS SOFTWARE, YOU SIGNIFY THAT YOU AGREE TO BE LEGALLY BOUND BY THE TERMS OF THIS AGREEMENT.
+
+Hereafter, "Software" refers to the Jobfia application, "Licensor" refers to Jobfia Inc., "License" refers to this document, and "Licensee" refers to the party that received this license after having downloaded this Software and paying the required fee as determined by the Licensor.
+
+This License governs use of the accompanying Software, and your purchase and use of the Software constitutes your acceptance of this License and all of its contents and stipulations.
+
+THIS SOFTWARE IS NOT FREEWARE OR SHAREWARE. IT IS A COMMERCIALLY LICENSED PRODUCT. IT MUST BE PURCHASED FROM THE LICENSOR FOR USE BY ANY INDIVIDUAL OR PARTY, AND IS SUBJECT TO THE FOLLOWING TERMS:
+
+1. The Software may only be used after the Terms of Use have been negotiated and the payment received in full by the Jobfia.com
+2. The Software may under no circumstances be distributed to any third party or individual.
+3. The Software may be used to serve multiple users, but they must not be given access to its source code or other internal resources. Distribution of these resources is illegal.
+4. You may not copy the Software for DISTRIBUTION or RESELL in any way.
+5. The Software may only be used on one web domain (e.g. www.domain.com) per license purchased solely from the Jobfia.com
+
+If this software is found to be stolen, distributed without permission, illegally obtained, or if the users of this software are found to be breaching any of the terms herein, the Licensor has the unconditional right to prosecute them to the fullest extent of the law.
+
+The Licensor, its management, or any of its employees, associates, or partners cannot be held liable for any damages that this Software may cause. As the Licensee and user of the Software, you agree to accept full liability for any damages, risk, and losses involved with or incurred by the use of the Software. THE SOFTWARE AND ALL ASSOCIATED MATERIALS AND SERVICES ARE PROVIDED SOLELY ON AN "AS-IS" BASIS WITH ABSOLUTELY NO WARRANTY OF FITNESS OR MERCHANTABILITY,  EXPLICIT OR IMPLIED.
+
+This license must be left completely intact when this software is used, or copied for approved multi-user use. The Licensor reserves all rights not expressly granted to you in this license.

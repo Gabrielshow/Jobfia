@@ -1,0 +1,15 @@
+Options -Indexes
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /
+
+<FilesMatch "\.inc.php">
+  order deny,allow
+  deny from all
+</FilesMatch>
+
+## SEO Friendly URLs ##
+#RewriteEngine On
+#RewriteRule ^category/([a-zA-Z0-9\-]+)$ /jobs.php?cat=$1
+#RewriteRule ^jobs/([0-9]+)/([a-zA-Z0-9\-]+)$ /job_details.php?id=$1
+#RewriteRule ^/?out/(.*)$ /out.php?$1 [L]

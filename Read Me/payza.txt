@@ -1,0 +1,23 @@
+
+
+Payza
+http://youdomain.com/payza_ipn.php 
+
+
+Your IPN Security Code confirms that the IPN data was sent by Payza. You generate your IPN Security Code from your Payza account, so only you and Payza will know its value.
+Your IPN Security Code will not change unless you generate a new one by accessing your Payza account. You can make this change at any time by going to "IPN setup".
+
+To setup your IPN Security Code:
+
+    1. Login to your Payza account.
+    2. Click on "Main Menu".
+    3. Under "Manage My Business", click on "IPN Advanced Integration".
+    4. Click on "IPN Setup".
+    5. Enter your Transaction PIN and click on "Access".
+    6. Click on the "Edit" icon for the respective business profile. This is for Business accounts only. Ignore this step if you only have one business profile on your account
+    7. Enter the information:
+          1. For IPN Status, select "Enabled".
+          2. Generate a security code if necessary and record it.
+    8. Click on "Update".
+
+This IPN Security Code will be sent by Payza with all IPN messages to your Alert URL. You may then compare the code sent with the one in your account to be sure that Payza did post the information captured.
