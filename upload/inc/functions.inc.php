@@ -302,16 +302,19 @@ function disposable_check($email)
 */
 
 if (!function_exists('GenerateRandString')) {
-	function GenerateRandString($len, $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789')
-	{
-		$string = '';
-		for ($i = 0; $i < $len; $i++)
-		{
-			$pos = rand(0, strlen($chars)-1);
-			$string .= $chars{$pos};
-		}
-		return $string;
-	}
+	function GenerateRandString(int $length, string $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'): string 
+{
+  $string = '';
+  
+  for($i = 0; $i < $length; $i++) {
+
+    $charIndex = rand(0, strlen($chars) - 1);
+    
+    $string .= $chars[$charIndex];
+  }
+
+  return $string;
+}
 }
 
 

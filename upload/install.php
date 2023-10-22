@@ -8,17 +8,18 @@
 \*******************************************************************/
 
 	if (!function_exists('str_split')) {
-		function str_split($str)
-		{
-			$str_array=array();
-			$len=strlen($str);
-			for($i=0; $i<$len; $i++)
-			{
-				$str_array[]=$str{$i};
-			}
-			return $str_array;
-		}
-	}
+		function str_split($str) 
+{
+  $strArray = [];
+  
+  for($i = 0; $i < strlen($str); $i++) {
+    $char = $str[$i];
+    $strArray[] = $char;
+  }
+
+  return $strArray;
+}
+}
 
 	define('is_Setup', TRUE);
 

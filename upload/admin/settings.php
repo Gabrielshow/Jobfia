@@ -137,6 +137,7 @@
 		else if ($tabid == "facebook")
 		{
 		}
+		else if ($tabid == "youtube") { if ($data['youtube_api_key'] == "" || !preg_match("/^[A-Za-z0-9-_]{39}$/", $data['youtube_api_key'])) $errs[] = "Please enter a valid YouTube API Key"; } 
 		else if ($tabid == "payment")
 		{
 			if ((isset($data['paypal_account']) && $data['paypal_account'] != "" && !preg_match("/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/", $data['paypal_account'])))
@@ -260,6 +261,7 @@
 		<li><a href="#offers"><span>Offers</span></a></li>
 		<li><a href="#users"><span>Users</span></a></li>
 		<li><a href="#facebook"><span>Facebook</span></a></li>
+		<li><a href="#youtube"><span>YouTube</span></a></li>
 		<li><a href="#payment"><span>Payment</span></a></li>
 		<li><a href="#mail"><span>Mail</span></a></li>
 		<li><a href="#notifications"><span>Email Notifications</span></a></li>
@@ -938,6 +940,33 @@
 		</table>
 		</form>
 	</div>
+	
+	<div id="youtube" class="tab_content">
+<form action="#youtube" method="post">
+<?php if (isset($tabid) && $tabid == "youtube") { ?>
+<?php if (isset($allerrors) && $allerrors != "") { ?>
+<div class="alert alert-danger"><?php echo $allerrors; ?></div>
+<?php }elseif (isset($_GET['msg']) && $_GET['msg'] == "updated") { ?>
+<div class="alert alert-success">Settings have been successfully saved</div>
+<?php } ?>
+<?php } ?>
+<table cellpadding="2" cellspacing="3" border="0">
+<tr>
+        <td valign="middle" align="left" class="tb1">YouTube API Key:</td>
+        <td valign="middle"><input type="text" name="data[youtube_api_key]" value="<?php echo $settings['youtube_api_key']; ?>" size="40" class="form-control" /></td>
+    </tr>
+    <tr>
+        <td align="center" valign="bottom">&nbsp;</td>
+<td align="left" valign="top">
+<input type="hidden" name="tabid" id="tabid" value="youtube" />
+<input type="hidden" name="action" id="action" value="savesettings" />
+<input type="submit" name="save" id="save" class="btn btn-success" value="Save Changes" />
+        </td>
+    </tr>
+</table>
+</form>
+</div>
+	
 
 
 	<div id="mail" class="tab_content">

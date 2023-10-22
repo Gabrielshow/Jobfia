@@ -27,6 +27,7 @@
 			$country_all	= (int)getPostParameter('country_all');
 			$country		= array();
 			$country		= $_POST['country_id'];
+			$youtube_video_id = mysqli_real_escape_string($conn, getPostParameter('youtube_video_id'));
 			$duration		= (int)getPostParameter('duration');
 			$duration_v		= mysqli_real_escape_string($conn, getPostParameter('duration_v'));
 			$positions		= (int)getPostParameter('positions');
@@ -88,7 +89,7 @@
 				}
 			}
 
-
+			
 			if (count($errors) == 0)
 			{			
 				$insert_sql = "INSERT INTO jobfia_jobs SET title='$job_title', user_id='0', price='$price', positions='$positions', daily_limit='$daily_limit', duration='$duration', description='$description', proof='$proof', is_proof_file='$is_proof_file', auto_rate='$auto_rate', vcode='$vcode', tags='$tags', worldwide='$country_all', few_times='$few_times', premium='$premium', featured='$featured', highlighted='$highlighted', homepage='$homepage', status='active', added=NOW()";
@@ -228,6 +229,15 @@
 					document.getElementById("vcode").style.display = "none";
 			}
 			</script>
+			<tr>
+    			<td valign="middle" align="left" class="tb1">YouTube Video ID:</td>
+    			<td valign="top"><input type="text" name="youtube_video_id" id="youtube_video_id" size="40" class="form-control" /></td>
+				<?php  if ($category_name != 'youtube') echo 'disabled';
+				if (!($youtube_video_id && strlen($youtube_video_id) == 11 && ctype_alnum($youtube_video_id)))
+				{
+   			 		$errors[] = "Please enter a valid YouTube Video ID";
+				}?>
+			</tr>
 			<tr>
 				<td valign="middle" align="left" class="tb1">Duration:</td>
 				<td valign="top">
